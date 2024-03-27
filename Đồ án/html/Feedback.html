@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVENGERS say hi</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="shortcut icon" type="image" width="100%" href="/images/logo.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- icons links -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <section class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <img src="/images/logo3.png" alt="Logo"> 
+                       <b><h1><div class="Name">𝒜 𝒱 𝐸 𝒩 𝒢 𝐸 𝑅 𝒮</div></h1></b>
+                        </div>
+                    <nav>
+                        <ul>
+                            <li><a href="Introduction.html">Introduction</a></li>
+                            <li><a href="Story.html">Story</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                                    Members
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="TrangcuarHT.html">Huyền Trân</a></li>
+                                    <li><a href="TrangcuaNgan.html">Kim Ngân</a></li>
+                                    <li><a href="TrangcuaAT.html">Anh Thư</a></li>
+                                    <li><a href="TrangcuaQK.html">Quốc Khánh</a></li>
+                                    <li><a href="TrangcuaTP.html">Trọng Phúc</a></li>
+                                    <li><a href="TrangcuaNam.html">Phương Nam</a></li>
+                                    <li><a href="TrangcuaTT.html">Trúc Trinh</a></li>
+                                    <li><a href="TrangucaPL.html">Phương Linh</a></li>
+                                    <li><a href="TrangcuaGH.html">Gia Hân</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Travels.html">Travels</a></li>
+                            <li><a href="Feedback.html">Feedback</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+        </section>
+    </header>
+<!--Đầu end---> 
+</div>
+<div class="container2 ">
+    <h1>CẢM NHẬN CỦA BẠN VỀ AVENGERS WEB</h1>
+    <small>cảm nhận của bạn góp phầ......</small>
+    <small>Các ý kiến đồng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm <i>(nếu có).</i></small>
+    <form action="#" onsubmit="return confirmFormSubmit()">
+        <section id="contact">
+        <div class="form-group">
+            <input type="text" id="Ho-ten" name="Ho-ten" required placeholder="Họ và tên">
+        <div class="form-group">
+            <input type="date" id="Datebirth" name="Ngaysinh" required placeholder="Ngày sinh">
+        </div>
+        </div>
+        <div class="form-group">
+            <input type="text" id="So-dien-thoai" name="So-dien-thoai" required placeholder="Số điện thoại">
+        <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="E-mail">
+        </div>
+        </div>
+        <div class="form-group">
+            <select id="Gioi-tinh" name="Gioi-tinh">
+                <option value="">Giới tính</option>
+                <option value="Female">Nữ</option>
+                <option value="Male">Nam</option>
+                <option value="Undefined">Chưa xác định</option>
+            </select>
+        <div class="form-group">
+            <input type="StudentID" id="Masosinhvien" name="Masosinhvien" required placeholder="Nhập mã số sinh viên">
+        </div>
+        </div>
+        <div class="form-group2 ">
+            <textarea id="Noi-dung" name="Noi-dung" rows="5" required placeholder="Nhập nội dung góp ý"></textarea>
+        <div class="form-group2">
+            <button type="submit">GỬI GÓP Ý</button>
+        </div>
+    </section>
+    </form>
+
+</div>
+<script>
+     function confirmFormSubmit() {
+        var name = document.getElementById("Ho-ten").value;
+        var dateOfBirth = document.getElementById("Datebirth").value;
+        var phoneNumber = document.getElementById("So-dien-thoai").value;
+        var email = document.getElementById("email").value;
+        var gender = document.getElementById("Gioi-tinh").value;
+        var studentID = document.getElementById("Masosinhvien").value;
+        var feedback = document.getElementById("Noi-dung").value;
+
+        var message = "Thông tin của bạn:\n\n" +
+            "Họ và tên: " + name + "\n" +
+            "Ngày sinh: " + dateOfBirth + "\n" +
+            "Số điện thoại: " + phoneNumber + "\n" +
+            "Email: " + email + "\n" +
+            "Giới tính: " + gender + "\n" +
+            "Mã số sinh viên: " + studentID + "\n" +
+            "Nội dung góp ý: " + feedback;
+
+        return confirm(message);
+    }
+</script>
+</body>
+<!---FOTTER-->
+<footer>
+    <div id="footer">
+        <div class="footer-left">
+            <div class="socialIcons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@chon_cai_lin_avg?_t=8kTnQ4oDZgb&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="Introduction.html">Introduction</a></li>
+                <li><a href="Story.html">Story</a></li>
+                <li><a href="Members.html">Members</a></li>
+                <li><a href="Travels.html">Travels</a></li>
+                <li><a href="Picture.html">Picture Library</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script>
+
+    let next = document.querySelector('.next')
+    let prev = document.querySelector('.prev')
+
+    next.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item')
+        document.querySelector('.slide').appendChild(items[0])
+    })
+
+    prev.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item')
+        document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+    })
+
+</script>
+</body>
+</html>
